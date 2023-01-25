@@ -1,0 +1,117 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --bg: rgba(26, 19, 19, 0.993);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    
+    background-color: var(--bg);
+
+    position: absolute; 
+
+    color: white;
+}
+
+.section__main{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+.main__container{
+    width: 34.375rem;
+    height: 18.75rem;
+    background-color: #f4f4f4;
+    border-radius: 1.900rem;
+    color: black;
+}
+.main__container .inner__info__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 0.9rem;
+    gap: 20px;
+}
+.main__container .inner__info__container .left,
+.main__container .inner__info__container .right{
+    width: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+.main__container .inner__info__container .right:nth-child(3){
+    margin-top: -10px;
+}
+.img__container{
+    width: 34.375rem;
+    height: 18.75rem;
+    position: absolute;
+    top: 112px;
+    transition: all .5s ease-out;
+}
+
+.img__container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.875rem;
+}
+
+.info__container{
+    position: absolute;
+
+    width: 400px;
+    height: 15.75rem;
+
+    color: black;
+    top: 140px;
+    left: 60%;
+    font-size: 1.1rem;
+
+    transition: all .5s ease;
+}
+
+.btn__container{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.btn__container .btn__izq, 
+.btn__container .btn__der{
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    text-align: center;
+    border: none;
+    color: white; 
+    background-color: rgb(67, 67, 136);
+    cursor: pointer;
+}
+.btn__container .btn__izq:hover, 
+.btn__container .btn__der:hover{
+    transform: scale(.95);
+    transition: all 0.2s ease;
+}
+.btn__container .btn__izq:active, 
+.btn__container .btn__der:active{
+    transform: scale(1.02);
+}
+
+.btn__container .num{
+    font-size: 3rem;
+}
